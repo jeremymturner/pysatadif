@@ -14,7 +14,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='pysatical',
+    name='pysatadif',
     version='0.0.1',
 
     description='Simple utility to generate proper ADIF for satellite contacts',
