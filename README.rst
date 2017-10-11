@@ -22,7 +22,7 @@ Quick Usage
 
 ::
 
-$ pysatadif --satname SO-50 --timeon 0050 --qso N0CALL --qso N1CALL --qso N2CALL,DM00
+$ pysatadif --satname SO-50 --timeon 0050 --qso N0CALL --qso N1CALL --qso N2CALL,DM00 --output adif
 
 
 Full Usage
