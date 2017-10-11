@@ -2,6 +2,7 @@ import sys
 from jinja2 import Template
 from pprint import pprint
 from .argsc import argsc
+from .datafilesc import datafilesc
 
 
 def output_text(data):
@@ -11,12 +12,12 @@ def output_text(data):
 
 def output_adif(data):
     # Jinja2 template for ADIF file header
-    with open("templates/header_template.adif") as file:
+    with open(datafilesc.get("templates/header_template.adif")) as file:
         adif_header = file.read()
     print(adif_header)
 
     # Jinja2 template for each ADIF QSO
-    with open("templates/qso_row_template.adif") as file:
+    with open(datafilesc.get("templates/qso_row_template.adif")) as file:
         adif_row_template = file.read()
     adif_row = Template(adif_row_template)
 

@@ -65,3 +65,9 @@ Run pysatadif once. Then see $HOME/.pysatadif/defaults.json
 You may configure your callsign, maidenhead grid square, radio, and 
 transmitting power which will apply to all passes. You may override 
 these at any time by using the command-line switches.
+
+
+History
+=======
+0.0.2 - Moving data files to data, dynamically including them
+0.0.1 - Initial Import, broken data files

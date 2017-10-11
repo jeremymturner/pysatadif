@@ -3,6 +3,7 @@ import argparse
 import datetime
 import json
 import os
+from .datafilesc import datafilesc
 
 
 class argsc(object):
@@ -93,7 +94,7 @@ class argsc(object):
         # ------------------------------------------------------------ #
 
         # Load satellite specific defaults (band, frequencies, mode)
-        with open("satdata/" + args.satname + ".json") as file:
+        with open(datafilesc.get("sats/" + args.satname + ".json")) as file:
             satinfo = json.loads(file.read())
 
         for key, value in satinfo[args.satname].items():
