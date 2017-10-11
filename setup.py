@@ -56,7 +56,7 @@ setup(
 
     packages=['pysatadif'],
 
-    data_files=[('satdata', ['satdata']), ('templates', ['templates'])],
+    data_files=[('satdata', ['satdata/*']), ('templates', ['templates/*'])],
 
     install_requires=['jinja2'],
 
