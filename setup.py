@@ -4,7 +4,7 @@ from os import path, walk
 
 here = path.abspath(path.dirname(__file__))
 
-datadir = path('data')
+datadir = path.join('data')
 datafiles = [(d, [path.join(d, f) for f in files])
              for d, folders, files in walk(datadir)]
 
