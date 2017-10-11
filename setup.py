@@ -1,8 +1,13 @@
 from setuptools import setup
 from codecs import open
-from os import path
+from os import path, walk
 
 here = path.abspath(path.dirname(__file__))
+
+# datadir = path('templates')
+# datadir2 = path('satdata')
+# datafiles = [(d, [path.join(d, f) for f in files])
+#              for d, folders, files in walk(datadir)]
 
 # Get the long description from the README file
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
@@ -54,9 +59,7 @@ setup(
     # What does your project relate to?
     keywords='hamradio satellites adif',
 
-    packages=['pysatadif'],
-
-    data_files=[('satdata', ['satdata/*']), ('templates', ['templates/*'])],
+    packages=['pysatadif', 'satdata', 'templates'],
 
     install_requires=['jinja2'],
 
