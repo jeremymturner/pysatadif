@@ -14,7 +14,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='pysatadif',
-    version='0.0.2',
+    version='0.0.3',
 
     description='Simple utility to generate proper ADIF for satellite contacts',
     long_description=long_description,
