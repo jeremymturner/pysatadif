@@ -4,9 +4,10 @@ from os import path, walk
 
 here = path.abspath(path.dirname(__file__))
 
-datadir = path.join('data')
-datafiles = [(d, [path.join(d, f) for f in files])
-             for d, folders, files in walk(datadir)]
+# datadir = path.join('pysatadif', 'data')
+# datafiles = [(d, [path.join(d, f) for f in files])
+#              for d, folders, files in walk(datadir)]
+# print(datafiles)
 
 # Get the long description from the README file
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
@@ -14,7 +15,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='pysatadif',
-    version='0.0.3',
+    version='0.0.11',
 
     description='Simple utility to generate proper ADIF for satellite contacts',
     long_description=long_description,
@@ -60,7 +61,8 @@ setup(
 
     packages=['pysatadif'],
 
-    data_files=datafiles,
+    include_package_data=True,
+    # data_files=datafiles,
 
     install_requires=['jinja2'],
 

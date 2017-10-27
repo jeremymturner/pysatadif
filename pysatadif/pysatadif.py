@@ -33,7 +33,7 @@ def main():
     if args.output == 'text':
         output_text(vars(args))
 
-    elif args.output == 'adif':
+    else:
         output_adif(vars(args))
 
 

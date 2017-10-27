@@ -72,7 +72,7 @@ class argsc(object):
                        help=argparse.SUPPRESS, default='SAT')
 
         p.add_argument('-o', '--output',
-                       help="Output Format (text, adif)", default='text')
+                       help="Output Format (text, adif)", default='adif')
 
         p.add_argument('-v', '--verbose', action='count',
                        help="Print verbose debugging messages", default=None)

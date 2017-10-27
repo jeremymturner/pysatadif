@@ -69,5 +69,6 @@ these at any time by using the command-line switches.
 
 History
 =======
+0.0.3 - Typo
 0.0.2 - Moving data files to data, dynamically including them
 0.0.1 - Initial Import, broken data files
