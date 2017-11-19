@@ -6,7 +6,7 @@ Quick Installation
 
 ::
 
-    pip install git+https://github.com/jeremymturner/pysatadif.git
+    pip install pysatadif
 
 
 Upgrading
@@ -14,7 +14,7 @@ Upgrading
 
 ::
 
-    pip install --upgrade git+https://github.com/jeremymturner/pysatadif.git
+    pip install --upgrade pysatadif
 
 
 Quick Usage
@@ -82,6 +82,7 @@ If you copied the other station's grid square, be sure to add it:
 
 History
 =======
+0.0.14 - Correcting README to reflect uploading and packaging to pypi
 0.0.13 - Added error checking for timeon parameter
 0.0.12 - Initial release
 0.0.3  - Typo
