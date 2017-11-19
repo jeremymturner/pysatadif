@@ -95,6 +95,10 @@ class argsc(object):
         if len(args.timeon) == 4:
             args.timeon = args.timeon + '00'
 
+        if len(args.timeon) != 6:
+            print("ERROR: time on (-n) expects HHMMSS or HHMM.")
+            exit()
+
         # If we get a timeon but no timeoff, just assume it's the same
         if not args.timeoff:
             args.timeoff = args.timeon

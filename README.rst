@@ -82,6 +82,7 @@ If you copied the other station's grid square, be sure to add it:
 
 History
 =======
+0.0.13 - Added error checking for timeon parameter
 0.0.12 - Initial release
 0.0.3  - Typo
 0.0.2  - Moving data files to data, dynamically including them
