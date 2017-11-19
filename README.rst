@@ -67,8 +67,22 @@ transmitting power which will apply to all passes. You may override
 these at any time by using the command-line switches.
 
 
+Hints
+=====
+If the QSO was made on the current UTC day, you may leave out the
+QSODATE parameter. If the QSO was made during the current UTC year, you 
+may leave out the YYYY.
+
+You may enter callsigns and grids in lower case, and they will be 
+converted to upper case.
+
+If you copied the other station's grid square, be sure to add it:
+-q N0CALL,AA00. If you don't have it, leave the comma and following out.
+
+
 History
 =======
-0.0.3 - Typo
-0.0.2 - Moving data files to data, dynamically including them
+0.0.12 - Initial release
+0.0.3  - Typo
+0.0.2  - Moving data files to data, dynamically including them
 0.0.1 - Initial Import, broken data files

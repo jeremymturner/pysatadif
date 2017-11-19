@@ -83,6 +83,14 @@ class argsc(object):
         # ------------------------------------------------------------ #
         # Data validation
 
+        # If we get MMDD, then prepend the current year
+        if len(args.qsodate) == 4:
+            args.qsodate = ymd[0:4] + args.qsodate
+
+        if len(args.qsodate) != 8:
+            print("ERROR: QSO date expects YYYYMMDD or MMDD for current year.")
+            exit()
+
         # If we get HHMM, then add on 00 for seconds
         if len(args.timeon) == 4:
             args.timeon = args.timeon + '00'
@@ -114,9 +122,9 @@ class argsc(object):
         args.qsos = []
         for q in args.qso:
             if ',' in q:
-                args.qsos.append({'call': q.split(',')[0], 'grid': q.split(',')[1]})
+                args.qsos.append({'call': q.split(',')[0].upper(), 'grid': q.split(',')[1].upper()})
             else:
-                args.qsos.append({'call': q})
+                args.qsos.append({'call': q.upper()})
 
         return args
 

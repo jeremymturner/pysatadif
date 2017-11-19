@@ -8,6 +8,8 @@ here = path.abspath(path.dirname(__file__))
 # datafiles = [(d, [path.join(d, f) for f in files])
 #              for d, folders, files in walk(datadir)]
 # print(datafiles)
+__version__ = ""
+exec(open("./pysatadif/version.py").read())
 
 # Get the long description from the README file
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
@@ -15,7 +17,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='pysatadif',
-    version='0.0.11',
+    version=__version__,
 
     description='Simple utility to generate proper ADIF for satellite contacts',
     long_description=long_description,
